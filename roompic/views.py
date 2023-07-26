@@ -11,7 +11,7 @@ import json
 
 @api_view(['GET', 'POST'])
 def upload(request, *args, **kwargs):
-    db = boto3.resource('dynamodb', aws_access_key_id="AKIARN3GXU7QMQE6ITO6", aws_secret_access_key="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")
+    db = boto3.resource('dynamodb', aws_access_key_id="AKIARN3GXU7QILUU2IOW", aws_secret_access_key="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")
     table = db.Table('roomInfos')
     
     if request.method == "GET":
@@ -33,6 +33,3 @@ def upload(request, *args, **kwargs):
         except:
             print({'Error': "Failed to insert data"}    )
             return Response({'Error':'Failed to insert'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-
-        
