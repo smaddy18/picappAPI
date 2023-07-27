@@ -1,8 +1,8 @@
 from django.urls import reverse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from .serializers import RoomSerializer
-from .models import RoomInfo
+# from .serializers import RoomSerializer
+# from .models import RoomInfo
 from rest_framework import status
 from decimal import Decimal
 import boto3
