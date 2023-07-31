@@ -54,7 +54,7 @@ config = {
     "appId": "1:797506837870:web:e7bff7d003b7719fe2b57f"
 }
 
-cred = credentials.Certificate("static/serviceAccountKey.json")
+cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
